@@ -1,0 +1,13 @@
+.rows-container {
+  width: calc(100% - 20px);
+  display: inline-flex;
+  border: 1px solid teal;
+  padding: 10px;
+  .entity {
+    width: 100px;
+    margin-right: 10px;
+  }
+  .entity-value {
+    width: 100%;
+  }
+}
