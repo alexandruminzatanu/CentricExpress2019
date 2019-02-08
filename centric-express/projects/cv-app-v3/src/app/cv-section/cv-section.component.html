@@ -1,0 +1,11 @@
+<button (click)="newRow()">Add row</button>
+<div class="rows-container">
+ <ng-container *ngFor="let row of rows">
+  <div class="row">
+    <input type="text" [(ngModel)]="row['entity']" class="entity" placeholder="Year">
+    <input type="textarea" [(ngModel)]="row['entityValue']" class="entity-value" placeholder="Highschool Name">
+  </div>
+ </ng-container>
+</div>
+<button (click)="saveRows()">SAVE CV</button>
+{{rows | json}}

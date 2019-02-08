@@ -1,0 +1,8 @@
+<div class="cv-preview">
+<h1>Ion Caprioară</h1>
+<h3>Educație</h3>
+<ng-container *ngFor="let row of rows">
+<h4><b>{{row.entity}}</b> {{row.entityValue}}</h4>
+</ng-container>
+</div>
+<button class="print-button" (click)="print()">Printează</button>
