@@ -9,7 +9,7 @@ import { Row } from '../models/row.model';
 })
 export class CvPreviewComponent {
   public rows: Array<Row>;
-  constructor(private cvService: CvService) {
+  constructor(public cvService: CvService) {
     this.rows = this.cvService.getCV();
    }
    print() {

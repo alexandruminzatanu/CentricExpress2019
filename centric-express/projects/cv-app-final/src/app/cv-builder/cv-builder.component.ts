@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CvService } from '../services/cv.service';
 
 @Component({
   selector: 'app-cv-builder',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvBuilderComponent implements OnInit {
 
-  constructor() { }
+  public name: string;
+
+  constructor(private cvService: CvService) { }
 
   ngOnInit() {
+  }
+  saveName(){
+    this.cvService.saveName(this.name);
   }
 
 }
